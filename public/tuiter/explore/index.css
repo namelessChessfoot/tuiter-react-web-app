@@ -1,0 +1,79 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+.wd-icon {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+}
+.wd-container {
+  padding: 16px;
+}
+.wd-search-box {
+  flex-grow: 1;
+}
+.wd-search-box > input {
+  background-color: darkgray;
+  height: 30px;
+  width: calc(100% - 90px);
+  border-radius: 15px;
+  padding-left: 30px;
+}
+.wd-search-box ::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+.wd-border {
+  border-color: rgb(47, 51, 54);
+}
+.wd-float-right {
+  float: right;
+}
+.wd-navigate-bar {
+  display: flex;
+  width: inherit;
+  padding-bottom: 0;
+}
+.wd-navigate-link {
+  height: 30px;
+  color: darkgray;
+  margin: auto;
+  text-align: center;
+}
+.wd-selected-navigate-link {
+  padding: 16px;
+  color: rgb(29, 161, 242);
+  border-bottom: rgb(29, 161, 242) solid 2px;
+  font-size: 15px;
+}
+.wd-text-white {
+  color: white;
+}
+.wd-text-gray {
+  color: gray;
+}
+.wd-post {
+  display: flex;
+  border-bottom: white solid 1px;
+}
+.wd-post-topic {
+  display: flex;
+}
+.wd-line-gap {
+  padding-bottom: 10px;
+}
+.wd-post-context {
+  flex-grow: 1;
+}
+.wd-post-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
