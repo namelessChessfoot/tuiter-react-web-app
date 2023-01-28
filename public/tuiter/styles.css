@@ -1,0 +1,51 @@
+:root {
+  --border-color: rgb(47, 51, 54);
+  --text-color-bright: white;
+  --text-color-dim: gray;
+  --standard-border: var(--border-color) solid 1px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-left: var(--standard-border);
+  border-right: var(--standard-border);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.wd-container {
+  padding: 16px;
+}
+
+.wd-border {
+  border-color: var(--border-color);
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-text-white {
+  color: var(--text-color-bright);
+}
+.wd-text-gray {
+  color: var(--text-color-dim);
+}
+
+.wd-line-gap {
+  padding-bottom: 10px;
+}
+
+.wd-icon {
+  width: 30px;
+  height: 30px;
+  color: aqua;
+  font-size: 30px;
+}

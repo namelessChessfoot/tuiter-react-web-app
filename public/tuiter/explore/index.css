@@ -1,21 +1,4 @@
-html {
-  width: 100%;
-  height: 100%;
-}
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: black;
-}
-.wd-icon {
-  width: 30px;
-  height: 30px;
-  background-color: aqua;
-}
-.wd-container {
-  padding: 16px;
-}
+@import url("../styles.css");
 .wd-search-box {
   flex-grow: 1;
 }
@@ -29,12 +12,6 @@ body {
 .wd-search-box ::placeholder {
   color: white;
   opacity: 0.4;
-}
-.wd-border {
-  border-color: rgb(47, 51, 54);
-}
-.wd-float-right {
-  float: right;
 }
 .wd-navigate-bar {
   display: flex;
@@ -53,21 +30,12 @@ body {
   border-bottom: rgb(29, 161, 242) solid 2px;
   font-size: 15px;
 }
-.wd-text-white {
-  color: white;
-}
-.wd-text-gray {
-  color: gray;
-}
 .wd-post {
   display: flex;
   border-bottom: white solid 1px;
 }
 .wd-post-topic {
   display: flex;
-}
-.wd-line-gap {
-  padding-bottom: 10px;
 }
 .wd-post-context {
   flex-grow: 1;
