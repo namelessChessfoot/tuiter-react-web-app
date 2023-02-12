@@ -3,9 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <title>Explore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="container row justify-content-center pt-3">
+      <div class="col-3 col-lg-2 col-md-2 col-sm-2">
+        <ul class="list-group mb-2">
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <i class="col-2 fab fa-twitter"></i>
+              <div class="col-1 d-none d-xl-block"></div>
+            </div>
+          </li>
+          <li class="list-group-item active">
+            <div class="row align-items-center">
+              <i class="col-2 fas fa-hashtag"></i>
+              <div class="col-1 d-none d-xl-block">Explore</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <i class="col-2 fas fa-bookmark"></i>
+              <div class="col-1 d-none d-xl-block">Bookmarks</div>
+            </div>
+          </li>
+        </ul>
+        <button
+          type="submit"
+          class="btn btn-primary rounded-pill"
+          style="width: 100%"
+        >
+          Tuit
+        </button>
+      </div>
+      <div class="col-6 align-items-center">
+        <div class="row align-items-center justify-content-center mb-2">
+          <div class="col-11 position-relative">
+            <span
+              class="fa fa-search position-absolute"
+              style="left: 30px; top: 7.5px"
+            ></span>
+            <input
+              class="rounded-pill ps-5 col-12"
+              placeholder="Search Tuiter"
+            />
+          </div>
+          <i class="col-1 fa fa-cog fa-lg"></i>
+        </div>
+        <ul class="nav nav-tabs my-nav-tabs mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="./for-you.html">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trending.html">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sports.html">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./entertainment.html">Entertainment</a>
+          </li>
+        </ul>
+        <img
+          src="https://static01.nyt.com/images/2023/03/08/multimedia/08turkey-earthquake-zqbc/08turkey-earthquake-zqbc-threeByTwoMediumAt2X.jpg?quality=75&auto=webp"
+          style="width: 100%"
+        />
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <div class="text-muted">Web Development</div>
+                <div>
+                  ReactJS
+                  <i class="fas fa-check-circle"></i>
+                  <div class="d-inline text-muted">- 2h</div>
+                </div>
+                <div>
+                  React.js is a component based front end library that makes it
+                  ver easy to build Single Page Applications or SPAs
+                </div>
+              </div>
+              <img class="col-3" src="../../favicon.ico" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="col-3 d-none d-lg-block"
+        style="background-color: green"
+      ></div>
+    </div>
+  </body>
+  <!-- <body>
     <div class="wd-search-box wd-container">
       <input placeholder="Search Tuiter" />
       <div class="wd-icon wd-float-right">&#x2699;</div>
@@ -104,5 +204,5 @@
         />
       </div>
     </div>
-  </body>
+  </body> -->
 </html>
