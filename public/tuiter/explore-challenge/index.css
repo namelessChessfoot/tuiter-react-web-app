@@ -1,0 +1,70 @@
+@import url("../styles.css");
+body {
+  border-left: none;
+  border-right: none;
+  background-color: white;
+}
+
+.my-nav-tabs {
+  padding-top: 15px;
+}
+.my-nav-tabs > li > a {
+  font-size: 14px;
+}
+.list-group > .myactive > div > div {
+  font-weight: 900;
+}
+
+.my-sb-text {
+  font-weight: 300;
+}
+
+.my-search {
+  background-color: #f2f2f2;
+  border: none;
+  height: 40px;
+}
+.nav-item {
+  flex: auto;
+  justify-content: center;
+  display: flex;
+}
+.nav-item > .my-link {
+  color: gray;
+  font-weight: 700;
+  padding: none;
+  margin: none;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.nav-item > .myactive {
+  color: black;
+  border-bottom: 5px solid #0d6efd;
+}
+
+.my-img-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.my-follow > ul > li {
+  background-color: #f2f2f2;
+}
+
+.my-follow > ul > li > div > button {
+  background-color: black;
+  font-size: 15px;
+}
+
+.my-left-bar > li {
+  border: none;
+}
+
+.my-terms {
+  margin-top: 10px;
+  font-size: 10px;
+  color: gray;
+}
