@@ -17,7 +17,14 @@ const NavigationSidebar = () => {
   const content = l
     .map(
       (info) =>
-        `<a class="list-group-item" href=${info.href}><i class="${info.icon}"></i>&nbsp${info.text}</a>`
+        `<a class="list-group-item" href=${info.href}>
+            <div class="row align-items-center">
+              <i class="col-2 ${info.icon}"></i>
+              <div class="col-1 d-none d-xl-block my-sb-text">
+                &nbsp${info.text}
+              </div>
+            </div>
+        </a>`
     )
     .join("");
   return `

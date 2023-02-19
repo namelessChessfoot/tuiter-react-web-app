@@ -9,14 +9,14 @@ const WhoToFollowListItem = ({ avatarIcon, userName, handle }) => {
             />
             <div class="col-8">
                 <div style="white-space: nowrap">
-                ${userName}
-                <i class="fas fa-check-circle"></i>
+                    ${userName}
+                    <i class="fas fa-check-circle"></i>
                 </div>
                 <div class="text-muted">@${handle}</div>
             </div>
             </div>
             <button type="submit" class="btn btn-primary rounded-pill col-3">
-            Follow
+                Follow
             </button>
         </div>
         </li>
