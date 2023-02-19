@@ -1,0 +1,90 @@
+@import url("../styles.css");
+body {
+  border-left: none;
+  border-right: none;
+}
+
+.my-nav-tabs {
+  padding-top: 15px;
+}
+.my-nav-tabs > li > a {
+  font-size: 14px;
+}
+.list-group > .myactive > div > div {
+  font-weight: 900;
+}
+
+.my-sb-text {
+  font-weight: 300;
+}
+
+.my-search {
+  background-color: #f2f2f2;
+  border: none;
+  height: 40px;
+}
+.nav-item {
+  /* flex: auto; */
+  justify-content: center;
+  display: flex;
+}
+.nav-item > .my-link {
+  color: white;
+  font-weight: 500;
+  margin: none;
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-item > .myactive {
+  background-color: #2a9fd6;
+}
+
+.my-img-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.my-follow > ul > li {
+  background-color: #f2f2f2;
+}
+
+.my-follow > ul > li > div > button {
+  background-color: black;
+  font-size: 15px;
+}
+
+.my-left-bar > li {
+  border: none;
+}
+
+.my-terms {
+  margin-top: 10px;
+  font-size: 10px;
+  color: gray;
+}
+
+.my-postarea {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: var(--border-color) solid 2px;
+  overflow: hidden;
+}
+
+.my-postarea > img {
+  width: 100%;
+}
+.my-postarea > div {
+  padding: 15px;
+  border-top: var(--border-color) solid 2px;
+}
+
+.my-border-bottom {
+  border-bottom: var(--border-color) solid 2px;
+}
