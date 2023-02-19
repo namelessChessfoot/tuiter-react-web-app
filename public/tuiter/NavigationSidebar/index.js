@@ -1,7 +1,11 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = ({ active = "" }) => {
   const l = [
     { href: "/", icon: "fab fa-twitter", text: "" },
-    { href: "/", icon: "fas fa-home", text: "Home" },
+    {
+      href: "/tuiter/HomeScreen/index.html",
+      icon: "fas fa-home",
+      text: "Home",
+    },
     {
       href: "/tuiter/explore/index.html",
       icon: "fas fa-hashtag",
@@ -17,7 +21,9 @@ const NavigationSidebar = () => {
   const content = l
     .map(
       (info) =>
-        `<a class="list-group-item" href=${info.href}>
+        `<a class="list-group-item ${
+          active === info.text ? "active" : ""
+        }" href=${info.href}>
             <div class="row align-items-center">
               <i class="col-2 ${info.icon}"></i>
               <div class="col-1 d-none d-xl-block my-sb-text">
