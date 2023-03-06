@@ -1,0 +1,19 @@
+.my-border-bottom {
+  border-bottom: var(--border-color) solid 2px;
+}
+
+.my-postarea {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: var(--border-color) solid 2px;
+  overflow: hidden;
+}
+
+.my-postarea > img {
+  width: 100%;
+}
+.my-postarea > div {
+  padding: 15px;
+  border-top: var(--border-color) solid 2px;
+}
