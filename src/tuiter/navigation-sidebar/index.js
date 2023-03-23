@@ -5,7 +5,7 @@ import { useLocation } from "react-router";
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const paths = pathname.split("/");
-  const active = paths[2];
+  const active = paths[2] || "home";
   const options = [
     { name: "Tuiter" },
     { name: "Home", to: "/tuiter/home" },
