@@ -14,7 +14,7 @@ const NavigationSidebar = () => {
     { name: "Messages" },
     { name: "Bookmarks" },
     { name: "Lists" },
-    { name: "Profile" },
+    { name: "Profile", to: "/tuiter/profile" },
     { name: "More" },
     { name: "Labs", to: "/" },
   ];
