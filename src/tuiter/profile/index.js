@@ -19,6 +19,25 @@ const ProfileComponent = () => {
   } = profile;
   return (
     <div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          paddingTop: "1%",
+          paddingBottom: "1%",
+          gap: "10%",
+        }}
+      >
+        <Link to="/tuiter/home">
+          <i className="bi bi-arrow-left" style={{ color: "black" }}></i>
+        </Link>
+        <div>
+          <div className="fw-bold h5">{`${firstName} ${lastName}`}</div>
+          <div className="text-muted">{`123 tuits`}</div>
+        </div>
+      </div>
       <img
         src={bannerPicture}
         width="100%"
@@ -67,7 +86,7 @@ const ProfileComponent = () => {
               style={{ display: "flex", gap: "5px" }}
               className="text-muted"
             >
-              <i className={icon} width="10px" height="10px"></i>
+              <i className={icon}></i>
               <div>{text}</div>
             </div>
           ))}
