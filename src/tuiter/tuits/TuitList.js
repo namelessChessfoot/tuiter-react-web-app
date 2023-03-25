@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import TuitItem from "./TuitItem";
-import { like } from "./tuits-reducer";
+import { findTuitsThunk } from "../../services/tuits-thunks";
 const TuitList = () => {
   const dispatch = useDispatch();
-  const likeHandler = (_id) => {
-    dispatch(like(_id));
-  };
-  const tuitsList = useSelector((state) => state.tuits);
+  const { tuits, loading } = useSelector((state) => state.tuitsData);
+  useEffect(() => {
+    dispatch(findTuitsThunk());
+  }, []);
+
   return (
     <ul className="list-group">
-      {tuitsList.map((t) => (
-        <TuitItem key={t._id} post={t} onLike={() => likeHandler(t._id)} />
+      {loading && <li className="list-group-item">Loading...</li>}
+      {tuits.map((t) => (
+        <TuitItem key={t._id} post={t} />
       ))}
     </ul>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import TuitStats from "./TuitStats";
-import { deleteTuit } from "../tuits/tuits-reducer";
+import { deleteTuitThunk, updateTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
-const TuitItem = ({ post = {}, onLike }) => {
+const TuitItem = ({ post = {} }) => {
   const {
     _id,
     userName = "",
@@ -17,7 +17,11 @@ const TuitItem = ({ post = {}, onLike }) => {
   } = post;
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
+  };
+  const likeHandler = () => {
+    const ld = liked ? -1 : 1;
+    dispatch(updateTuitThunk({ ...post, likes: likes + ld, liked: !liked }));
   };
 
   return (
@@ -53,7 +57,7 @@ const TuitItem = ({ post = {}, onLike }) => {
             retuits={retuits}
             likes={likes}
             liked={liked}
-            onLike={onLike}
+            onLike={likeHandler}
           />
         </div>
       </div>
